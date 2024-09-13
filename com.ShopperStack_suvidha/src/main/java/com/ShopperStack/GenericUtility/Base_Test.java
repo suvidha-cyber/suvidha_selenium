@@ -54,7 +54,6 @@ public class Base_Test {
 		reports=new ExtentReports();
 		reports.attachReporter(spark);
 	}
-
 	@BeforeClass
 	public void beforeClass() throws IOException {
 		System.out.println("@BeforeClass");
@@ -103,9 +102,7 @@ public class Base_Test {
 		loginPage.getEmailTextField().sendKeys(file.readPropertyData("email"));
 		loginPage.getPasswordTextField().sendKeys(file.readPropertyData("password"));
 		loginPage.getLoginButton().click();
-
 	}
-
 	@AfterMethod
 	public void afterMethod() throws InterruptedException {
 		System.out.println("@AfterMethod");
