@@ -63,12 +63,12 @@ public class Base_Test {
 		// String browser=sc.next();
 		// System.out.println("Number of Browsers");
 
-		String browserName = file.readPropertyData("browserName");
-		String url = file.readPropertyData("url");
+//		String browserName = file.readPropertyData("browserName");
+//		String url = file.readPropertyData("url");
 
-//		String browserName = System.getProperty("browser"); //If  we dont want to use property file and we wanna use command line.
-//		String url = System.getProperty("url");
-//         
+		String browserName = System.getProperty("browser"); //If  we dont want to use property file and we wanna use command line.
+		String url = System.getProperty("url");
+        
 		if (browserName.contains("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browserName.contains("firefox")) {
