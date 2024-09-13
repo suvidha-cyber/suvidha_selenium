@@ -66,7 +66,7 @@ public class Base_Test {
 //		String browserName = file.readPropertyData("browserName");
 //		String url = file.readPropertyData("url");
 
-		String browserName = System.getProperty("browser"); //If  we dont want to use property file and we wanna use command line.
+    	String browserName = System.getProperty("browser"); //If  we dont want to use property file and we wanna use command line.
 		String url = System.getProperty("url");
         
 		if (browserName.contains("chrome")) {
@@ -75,7 +75,7 @@ public class Base_Test {
 			driver = new FirefoxDriver();
 		} else if (browserName.contains("edge")) {
 			driver = new EdgeDriver();
-		}
+		}s
 
 		else {
 			System.out.println("Invalid Browser Name");
